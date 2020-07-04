@@ -8,9 +8,13 @@
 
 * {
     font-family: 'Raleway', sans-serif;
+    box-sizing: border-box;
 }
 
 body {
+    --color-basic: #FB3B64;
+    --color-professional: #07ACE6;
+    --color-premium: #55DFB4;
     width: 100vw;
     cursor: default;
 }
@@ -30,6 +34,9 @@ main {
     margin-top: 130px;
     /* position: relative; */
 }
+
+
+/* NAVIGATION */
 
 .nav__container {
     width: 100%;
@@ -64,6 +71,9 @@ main {
     border-bottom: 4px solid #08A6E4;
 }
 
+
+/* BANNER */
+
 .banner__image {
     width: 100%;
 }
@@ -92,6 +102,115 @@ main {
     border-radius: 50px;
     text-decoration: none;
 }
+
+
+/* POPULARITY */
+
+.popularity__section {
+    height: 531px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px 0;
+}
+
+.popularity__title {
+    display: block;
+    font-size: 36px;
+    font-weight: 400;
+    margin-bottom: 100px;
+}
+
+.popularity__section .container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.popularity__article {
+    text-align: center;
+    width: 176px;
+    padding: 0 20px;
+}
+
+.popularity__circle {
+    border-radius: 50%;
+    width: 63px;
+    height: 63px;
+    position: relative;
+    margin: 0 auto;
+    margin-bottom: 13px;
+}
+
+.popularity__circle_basic {
+    background-color: var(--color-basic);
+}
+
+.popularity__circle_professional {
+    background-color: var(--color-professional);
+}
+
+.popularity__circle_premium {
+    background-color: var(--color-premium);
+}
+
+.popularity__circle_basic img {
+    position: relative;
+    left: 35%;
+    top: 5%;
+    margin: auto 0;
+}
+
+.popularity__circle_professional img {
+    position: relative;
+    left: 35%;
+    top: 20%;
+    margin: auto 0;
+}
+
+.popularity__circle_premium img {
+    position: relative;
+    left: 35%;
+    top: 10%;
+    margin: auto 0;
+}
+
+.popularity__article p {
+    color: #A5A5A5;
+    font-size: 16px;
+}
+
+.popularity__article p span {
+    color: #000000;
+    font-size: 20px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 19px;
+    letter-spacing: 5px;
+}
+
+
+/* BLOG */
+
+.blog__section {
+    height: 1395px;
+}
+
+
+/* PRICING */
+
+.pricing__section {
+    height: 616px;
+}
+
+
+/* CONTACT */
+
+.contact__section {
+    height: 376px;
+}
+
+
+/* FOOTER */
 
 footer {
     box-shadow: 0px -5px 40px #00000029;
