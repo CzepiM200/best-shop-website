@@ -296,14 +296,11 @@ main {
 
 .advantages__bottom .advantages__right::before {
     content: "";
-    /* height: 370px;
-    width: 440px; */
     height: 100%;
     width: 106%;
     background-color: var(--color-premium);
     position: absolute;
-    border-radius: 10px;
-    /* transform: translateX(100px); */
+    border-radius: 5px;
 }
 
 .advantages__bottom .advantages__right img {
@@ -315,6 +312,115 @@ main {
 
 .pricing__section {
     height: 616px;
+}
+
+.pricing__section .container:not(.pricing__title) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pricing__section .pricing__title {
+    font-size: 36px;
+    font-weight: 400;
+    text-align: center;
+    margin: 60px auto;
+}
+
+.pricing__article_basic {
+    width: 372px;
+    height: 461px;
+    border: 1px solid var(--color-basic);
+    border-radius: 20px;
+}
+
+.pricing__article_professional {
+    width: 405px;
+    height: 500px;
+    border: 1px solid var(--color-professional);
+    border-radius: 20px;
+    box-shadow: 5px 10px 27px #07ACE629;
+}
+
+.pricing__article_premium {
+    width: 372px;
+    height: 461px;
+    border: 1px solid var(--color-premium);
+    border-radius: 20px;
+}
+
+.pricing__section .container article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: space-around;
+    text-align: center;
+}
+
+.pricing__section .container article div {
+    margin: auto 0;
+}
+
+.pricing__type {
+    font-size: 21px;
+    font-weight: bold;
+}
+
+.pricing__price {
+    font-size: 46px;
+    margin: 14px 0;
+    font-family: "Open Sans" sans-serif;
+}
+
+.pricing__article_basic .pricing__price {
+    color: var(--color-basic);
+}
+
+.pricing__article_professional .pricing__price {
+    color: var(--color-professional);
+}
+
+.pricing__article_premium .pricing__price {
+    color: var(--color-premium);
+}
+
+.pricing__limited {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.pricing__section ul li {
+    font-size: 14px;
+    padding: 10px 0;
+}
+
+.pricing__section .enable {
+    color: var(--color-premium);
+}
+
+.pricing__section .disable {
+    color: var(--color-basic);
+}
+
+.button__begin {
+    background-color: var(--color-basic);
+}
+
+.button__professional {
+    background-color: var(--color-professional);
+}
+
+.button__premium {
+    background-color: var(--color-premium);
+}
+
+.button {
+    padding: 20px 60px;
+    border-radius: 30px;
+    color: white;
+    margin: 0 auto;
+    transform: translateY(28px);
+    text-decoration: none;
 }
 
 
