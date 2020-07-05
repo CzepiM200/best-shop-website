@@ -427,7 +427,74 @@ main {
 /* CONTACT */
 
 .contact__section {
+    margin-top: 150px;
     height: 376px;
+}
+
+.contact__section .container {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
+
+.contact__info {
+    width: 30%;
+    height: 50%;
+}
+
+.contact__title {
+    font-size: 49px;
+    font-weight: 400;
+    margin-bottom: 22px;
+}
+
+.contact__text {
+    font-size: 16px;
+    margin-bottom: 42px;
+}
+
+.contact__form {
+    width: 30%;
+    height: 100%;
+}
+
+.contact__form form {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact__details {
+    display: flex;
+    align-items: center;
+}
+
+.contact__details p {
+    margin: 0 20px 0 10px;
+}
+
+.contact__section form>label {
+    color: var(--color-professional);
+    font-size: 11px;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+
+.contact__form form>input {
+    border: none;
+    border-bottom: 1px solid #95989A;
+    margin: 44px 0 44px 0;
+}
+
+.contact__accept {
+    display: flex;
+}
+
+.contact__accept label {
+    display: block;
+    color: #707070;
+    font-size: 12px;
 }
 
 
