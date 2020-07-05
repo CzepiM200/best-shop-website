@@ -189,10 +189,125 @@ main {
 }
 
 
-/* BLOG */
+/* ADVANTAGES */
 
-.blog__section {
+.advantages__section {
     height: 1395px;
+}
+
+.advantages__section article {
+    height: 370px;
+    border: 1px solid #E8E9ED;
+    border-radius: 5px;
+    margin-bottom: 37px;
+    display: flex;
+}
+
+.advantages__section .advantages__bottom {
+    border: none;
+}
+
+.advantages__bottom .advantages__left {
+    border: 1px solid #E8E9ED;
+}
+
+.advantages__section article>div {
+    width: 50%;
+}
+
+.advantages__section article div {
+    width: 50%;
+    padding: 36px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.advantages__title {
+    font-size: 36px;
+    font-weight: 400;
+}
+
+.advantages__text {
+    font-size: 16px;
+    margin: 30px 0 50px 0;
+    padding-right: 120px;
+}
+
+.advantages__line.basic {
+    padding: 0px;
+    border: 1px solid var(--color-basic);
+}
+
+.advantages__line.professional {
+    padding: 0px;
+    border: 1px solid var(--color-professional);
+}
+
+.advantages__line.premium {
+    padding: 0px;
+    border: 1px solid var(--color-premium);
+}
+
+.advantages__section article img {
+    align-self: flex-start;
+    justify-self: center;
+    position: relative;
+}
+
+.advantages__section .advantages__top .advantages__right::before {
+    height: 140px;
+    width: 120px;
+    position: absolute;
+    content: "";
+    background-color: var(--color-basic);
+    background-position: center;
+    background-size: cover;
+    transform: translateX(270px) translateY(-85px)rotate(-45deg);
+    border-radius: 30px;
+}
+
+.advantages__section .advantages__center .advantages__left {
+    position: relative;
+}
+
+.advantages__section .advantages__center .advantages__left::before {
+    height: 310px;
+    width: 310px;
+    position: absolute;
+    content: "";
+    background-color: var(--color-professional);
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+    transform: translateY(-20px);
+}
+
+.advantages__bottom .advantages__right {
+    width: 50%;
+    height: 100%;
+    padding: 0px;
+    margin: 0 36px;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-content: center;
+}
+
+.advantages__bottom .advantages__right::before {
+    content: "";
+    /* height: 370px;
+    width: 440px; */
+    height: 100%;
+    width: 106%;
+    background-color: var(--color-premium);
+    position: absolute;
+    border-radius: 10px;
+    /* transform: translateX(100px); */
+}
+
+.advantages__bottom .advantages__right img {
+    margin-left: 150px;
 }
 
 
