@@ -196,7 +196,7 @@ main {
 /* ADVANTAGES */
 
 .advantages__section {
-    height: 1395px;
+    height: 1300px;
 }
 
 .advantages__section article {
@@ -499,6 +499,37 @@ main {
     display: block;
     color: #707070;
     font-size: 12px;
+}
+
+.contact__form input[type="checkbox"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin-right: 10px;
+    height: 24px;
+    min-width: 24px;
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 5px;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.4);
+    background: white;
+    outline: none;
+    position: relative;
+}
+
+.contact__form input[type="checkbox"]:checked {
+    color: var(--color-professional);
+}
+
+.contact__form input[type="checkbox"]:checked:after {
+    content: "";
+    width: 11px;
+    height: 11px;
+    background-image: url("../images/Checkmark.svg");
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 
 
